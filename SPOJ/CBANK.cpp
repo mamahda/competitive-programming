@@ -19,6 +19,7 @@ ll modexp(ll b, ll e, ll m) {
 
 int main(){
   scanf("%lld", &tc);
+  ll inv6 = modexp(6, MOD-2, MOD);
   while(tc--){
     scanf("%lld", &n);
     ans = (4 + (n-1) * 6) % MOD;
@@ -26,7 +27,6 @@ int main(){
     ll temp = ((((n - 1) * (n - 2)) % MOD) * 2) % MOD;
     ans = ans + temp;
 
-    ll inv6 = modexp(6, MOD-2, MOD);
     temp = (((n - 1) * (n - 2) % MOD) * (n - 3) % MOD) * inv6 % MOD;
     ans = ans + temp;
 
