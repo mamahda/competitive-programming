@@ -1,29 +1,26 @@
-#include <iostream>
-#include <iomanip>
-using namespace std;
+#include <cstdio>
 
 int main()
 {
-  int T;
-  cin >> T;
-  cout << fixed << setprecision(10);
+    int t;
+    scanf("%d", &t);
 
-  while (T--)
-  {
-    int n;
-    cin >> n;
-    if (n == 1)
+    while (t--)
     {
-      cout << "1.0\n";
-      continue;
+        int n;
+        scanf("%d", &n);
+        if (n == 1)
+        {
+            printf("1.0\n");
+            continue;
+        }
+        double prob = 1.0;
+        for (int i = 1; i < n; ++i)
+        {
+            prob *= (2.0 * i - 1.0) / (2.0 * i);
+        }
+        printf("%lf\n", prob);
     }
-    double prob = 1.0;
-    for (int i = 1; i < n; ++i)
-    {
-      prob *= (2.0 * i - 1.0) / (2.0 * i);
-    }
-    cout << prob << '\n';
-  }
 
-  return 0;
+    return 0;
 }
