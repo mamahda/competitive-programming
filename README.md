@@ -24,6 +24,7 @@ Repository pribadi untuk menyimpan solusi problem dari berbagai platform competi
 │   └── problems/        # TLX Problems Solutions
 ├── cses/                # CSES Problem Solutions
 ├── leetcode/            # LeetCode Problem Solutions
+├── eolymp/              # E-Olymp Problem Solutions
 └── schematics/          # Schematics NPC/ITS Competitive Programming Solutions
 ```
 
